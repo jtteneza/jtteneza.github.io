@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <!-- Bootstrap Core CSS -->
@@ -42,31 +43,31 @@
     </form>
    
     
- 
-    
- 
  <div class="container">
     <div class="row">
         <div class="col-md-6">
-             <button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+
+             <button type="button" class="btn btn-success" onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+			 <button onclick="subt(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
         </div>
-        <div class="col-md-6">
-            <button onclick="subt(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
-        </div>
+        
     </div>
 </div>
 
 <div class="container">
     <div class="col">
-        <div class="col-md-6">
+        <div class="col+md+6">
            <button onclick="times(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+		   <button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
         </div>
-        <div class="col-md-6">
-            <button onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+        <div class="col+md+6">
+            
         </div>
     </div>
 </div>
-
+    
+ 
+ 
 <!-- jQuery -->
 <script src="../js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
